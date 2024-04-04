@@ -1,0 +1,22 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.main {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+}
+.wrapper img {
+  width: 150px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  transition: 1s;
+}
+img:hover {
+  width: 500px;
+}
