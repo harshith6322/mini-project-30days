@@ -1,0 +1,93 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  /* padding: 20px; */
+  /* border: 1px solid grey; */
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.wrapper-bg {
+  background-color: #2323ffcd;
+  width: 100%;
+  height: 40%;
+  border-radius: 15px 15px 0 0;
+}
+.wrapper-img {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 115px;
+  height: 115px;
+  border-bottom: 4px solid #2323ffcd;
+  border-radius: 50%;
+}
+.wrapper-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid white;
+}
+.wrapper-details {
+  margin-top: 40px;
+  text-align: center;
+}
+.wrapper-details .h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.wrapper-details .h6 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.wrapper-details p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.wrapper-icons .link {
+  text-decoration: none;
+  background-color: #2323ffcd;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+}
+.wrapper-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  color: white;
+}
+.wrapper-btn {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.wrapper-btn button {
+  margin-top: 15px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: #2323ffcd;
+  color: white;
+}
