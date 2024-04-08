@@ -1,0 +1,84 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.bg {
+  background-image: url(https://media.macphun.com/img/uploads/macphun/blog/2246/_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+}
+.header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 15px;
+  z-index: 1;
+  color: white;
+}
+.nav-bar h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.details h1 {
+  font-size: 40px;
+}
+button {
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  background-color: none;
+  outline: none;
+  border-radius: 6px;
+}
+.btn-1 {
+  padding: 10px 16px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-right: 10px;
+  transition: 1s;
+}
+.btn-2 {
+  padding: 10px 16px;
+  background-color: white;
+  border: 2px solid white;
+  transition: 1s;
+}
+.btn-1:hover {
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+}
+.btn-2:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
