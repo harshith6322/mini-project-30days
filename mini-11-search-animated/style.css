@@ -1,0 +1,38 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: cadetblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  height: 35px;
+  width: 0;
+  padding: 10px;
+  position: relative;
+  transition: all 1s;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+.div {
+  position: relative;
+}
+button {
+  height: 35px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+.active input {
+  width: 200px;
+}
