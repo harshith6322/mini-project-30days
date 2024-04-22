@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="img-box">
+      <img
+        src="https://amazingarchitecture.com/storage/files/1/architecture-firms/manas-bhatia/ai-generated-future-cities/ai_generated_future_cities_manas_bhatia-15.jpg"
+        alt="img"
+        class="img"
+      />
+      <div class="burger">🍔</div>
+    </div>
+    <div class="side-bar">
+      <h1>Logo</h1>
+      <nav>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+      </nav>
+      <div class="wrong">❌</div>
+    </div>
+    <script>
+      const burger = document.querySelector(".burger");
+      const wrong = document.querySelector(".wrong");
+      const add = document.querySelector(".side-bar");
+
+      burger.addEventListener("click", () => {
+        add.classList.add("addnav");
+      });
+      wrong.addEventListener("click", () => {
+        add.classList.remove("addnav");
+      });
+    </script>
+  </body>
+</html>
