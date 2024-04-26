@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="center">
+        <div class="img1">
+          <img
+            src="./img.folder/k-mitch-hodge-oQ9pECond48-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img1">
+          <img
+            src="./img.folder/krishna-moorthy-d-OntE_3_pKks-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img1">
+          <img
+            src="./img.folder/shreshth-gupta-7-RDFPniALI-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img1">
+          <img
+            src="./img.folder/sonaal-bangera-XuQGqCBpNGk-unsplash.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.to(".img1", {
+        ease: Expo.easeInOut,
+        width: "100%",
+        stagger: 2,
+        duration: 2.5,
+        repeat: -1,
+        yoyo: true,
+      });
+    </script>
+  </body>
+</html>
