@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-4">
+      <nav>
+        <p>Transforming visions into brands.</p>
+        <p><span>↵</span>See the work</p>
+      </nav>
+      <div class="page-4-con">
+        <div class="imgvid">
+          <img
+            src="https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format"
+            alt=""
+            class="img"
+          />
+          <video
+            src="./other/Website-homepage-Work-01_1 (4).mp4"
+            loop
+            muted
+            class="video"
+          ></video>
+          <p>Rivian</p>
+        </div>
+        <div class="imgvid">
+          <img
+            src="https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format"
+            alt=""
+            class="img"
+          />
+          <video
+            src="./other/Website-homepage-Work-02_1.mp4"
+            loop
+            muted
+            class="video"
+          ></video>
+          <p>Oura</p>
+        </div>
+        <div class="imgvid">
+          <img
+            src="https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format"
+            alt=""
+            class="img"
+            class="video"
+          />
+          <video
+            src="./other/Website-homepage-Work-03_1.mp4"
+            loop
+            muted
+            class="video"
+          ></video>
+          <p>Moxion</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const imgvids = document.querySelectorAll(".imgvid");
+      imgvids.forEach((imgvid) => {
+        const img = imgvid.querySelector(".img");
+        const video = imgvid.querySelector(".video");
+
+        imgvid.addEventListener("mouseenter", () => {
+          gsap.to(img, { duration: 0.5, zIndex: -10, opacity: 0 });
+          gsap.to(video, { duration: 0.5, zIndex: 10, opacity: 1 });
+          video.play(); // Start playing the video
+        });
+
+        imgvid.addEventListener("mouseleave", () => {
+          gsap.to(img, { duration: 0.5, zIndex: 10, opacity: 1 });
+          gsap.to(video, { duration: 0.5, zIndex: -10, opacity: 0 });
+          video.pause(); // Pause the video
+        });
+      });
+    </script>
+  </body>
+</html>
